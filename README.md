@@ -63,6 +63,10 @@ Primero, se debe mirar el voltaje del pin 23 **VCC**, para saber que chip se nec
 
 Esta placa tiene por lo general una BIOS de 5V, por lo que usa los chips _**MX29F1610MC**_ de 2 MB (2048 KB). Se debe programar con la BIOS deseada antes de colocar el chip en la consola.
 
+> [!WARNING]
+> **Peligro con el uso de chips de 3.3V (MX29LV160TMC) en placas VA0:**
+> En muchos tutoriales generales se recomienda la memoria **MX29LV160TMC**, pero este chip opera a **3.3V** (diseñado para placas VA1/VA2 o que usen 3.3V). **No se recomienda instalarlo directamente en una placa VA0 de 5V** ya que la lógica sigue siendo de 5V. Aunque en algunos casos la consola pueda encender, alimentar una memoria de 3.3V con 5V sin un circuito de adaptación provocará fallos de lectura, congelamientos aleatorios o la degradación permanente de la memoria a corto/mediano plazo.
+
 ![Acercamiento al chip BIOS montado en la placa](Fotos/VA0/VA0-BIOS.jpg)
 
 1. Se retira el chip original.
@@ -83,3 +87,23 @@ POR HACER
 
 ## VA2/2.1
 POR HACER
+
+---
+
+## 🎁 Anexo: Mod SCI-SPI (Lector MicroSD Interno)
+
+Si instalaste una BIOS con **DreamShell** o la versión **No-GD**, el complemento ideal para cargar tus respaldos y aplicaciones es la instalación de un adaptador SD usando la interfaz serial (SCI-SPI).
+
+> [!NOTE]
+> Aunque la velocidad de transferencia del puerto serial es limitada en comparación con un GD-EMU o un mod IDE, es la solución más económica y funcional para ejecutar juegos, homebrew y emuladores.
+
+### Diagramas y Referencias
+Para la instalación del conector o adaptador de tarjeta SD, se recomienda consultar los magníficos diagramas explicativos y tutoriales creados por **Yakara Colombia**, los cuales detallan los puntos exactos de soldadura en la placa madre:
+
+* 📺 **Tutorial y esquemas paso a paso:** [Video de Yakara Colombia - Mod SCI-SPI](https://youtu.be/3uDJ-q2Sw2o?si=O8tltq6eckUouUv3)
+* 📌 **Puntos clave de conexión:**
+  * **Líneas SPI:** SCK, MISO, MOSI y CS conectadas a las líneas del puerto serial.
+  * **Alimentación:** **3.3V** y **GND** tomados directamente de los rieles de alimentación de la consola.
+
+> [!TIP]
+> Asegúrate de utilizar cables cortos (de preferencia de menos de 10 cm) y bien blindados para evitar interferencias en la lectura de la tarjeta MicroSD.
