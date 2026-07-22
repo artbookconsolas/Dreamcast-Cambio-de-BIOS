@@ -92,7 +92,7 @@ POR HACER
 
 ## 🎁 Anexo: Mod SCI-SPI (Lector MicroSD Interno)
 
-Si instalaste una BIOS con **DreamShell** o la versión **No-GD**, el complemento ideal para cargar tus respaldos y aplicaciones es la instalación de un adaptador SD usando la interfaz serial (SCI-SPI).
+Si instalaste una BIOS con **DreamShell**, el complemento ideal para cargar tus respaldos y aplicaciones es la instalación de un adaptador SD usando la interfaz serial (SCI-SPI).
 
 > [!NOTE]
 > Aunque la velocidad de transferencia del puerto serial es limitada en comparación con un GD-EMU o un mod IDE, es la solución más económica y funcional para ejecutar juegos, homebrew y emuladores.
