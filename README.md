@@ -30,7 +30,7 @@ Este cable es el que permite que el software tome el control del chip y autorice
 
 Una vez que el hardware está listo, necesitarás un archivo `.bin` para programar el chip. Dependiendo de tu objetivo (usar GDEMU, disco duro, o solo jugar copias), la *scene* ha desarrollado distintas opciones:
 
-*   **Japanese Cake (JC):** Es similar a la BIOS stock pero con esteroides. Hace que la consola sea *Region Free*, fuerza la compatibilidad con cables VGA en juegos que no lo soportan, permite saltar la animación de inicio, y es **la BIOS recomendada si usas GDEMU**, ya que optimiza los tiempos de carga y compatibilidad.
+*   **Japanese Cake (JC):** Es similar a la BIOS stock pero con esteroides. Hace que la consola sea *Region Free*, fuerza la compatibilidad con cables VGA en juegos que no lo soportan, permite saltar la animación de inicio, y es **la BIOS recomendada si usas GDEMU**, ya que optimiza los tiempos de carga y compatibilidad. Ultima version estable **v1.032**
 *   **[DC-SWAT (DreamShell Bootloader)](https://github.com/DC-SWAT/DreamShell):** Esta es la BIOS obligatoria si vas a instalar un mod de Disco Duro (IDE/SATA) o el mod **SPI-SD**. En lugar de ir al menú original de la consola, esta BIOS busca inmediatamente la ruta del dispositivo de almacenamiento masivo para cargar el sistema operativo DreamShell.
 *   **BIOS Originales Modificadas (DevKit / Katana 3D):** Son BIOS que mantienen el funcionamiento clásico de la consola (ideal para usar el lector de discos original) pero están parcheadas para ser *Region Free*, leer backups (MIL-CD) y cambiar la mítica animación de la espiral por la del kit de desarrollo (espacio negro) o la animación Katana en 3D.
 
