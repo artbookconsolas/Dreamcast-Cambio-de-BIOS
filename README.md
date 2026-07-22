@@ -57,13 +57,23 @@ Si vas al repo de **DreamShell**, en la sección de descargas, existe un archivo
 
 Primero, se debe mirar el voltaje del pin 23 **VCC**, para saber que chip se necesita instalar. Esto se recomienda hacer con la consola encendida y un multimetro, si tienes más experiencia puedes ver que conector de la fuente llega al pin 23 **VCC**
 
-<details>
-<summary><b>VA0 5V</b></summary>
+## VA0
 
-Esta placa usa los chips _**MX29F1610MC**_ de 2mb (o 2048kb), se debe programar con la BIOS deseada antes de colocarlo en la consola.
+![Placa madre VA0 fuera de la consola sin modificar](Fotos/VA0/VA0.jpg)
 
-</details>
+Esta placa tiene por lo general una BIOS de 5V, por lo que usa los chips _**MX29F1610MC**_ de 2 MB (2048 KB). Se debe programar con la BIOS deseada antes de colocar el chip en la consola.
 
+![Acercamiento al chip BIOS montado en la placa](Fotos/VA0/VA0-BIOS.jpg)
 
-https://www.youtube.com/watch?v=g9755sn-8no VA0 ModzvilleUSA!
-https://youtu.be/3uDJ-q2Sw2o?si=I_xdVHWrhJVvFiAo MOD SPI SD Dreamcast Mundo Yakara
+1. Se retira el chip original.
+2. Se limpian los pads (hay que dejarlos lo más planos posible, sin estaño sobrante).
+3. Respetando el **PIN 1** original, se suelda el reemplazo.
+4. Para finalizar, se debe unir el **PIN 23** con el **PIN 44** (con un cable directo) y, opcionalmente, el **PIN 1** del chip al **PIN B14** del conector GD-ROM.
+
+![Chip de reemplazo ya montado en la consola](Fotos/VA0/BIOS-5V-DS-VA0.jpg)
+
+> [!NOTE]
+> El puente del PIN 1 al PIN B14 del GD-ROM es para programar el chip desde la misma consola mediante software. Si prefieres no usar esa función, puedes omitir este cable.
+
+> [!TIP]
+> Existe un videotutorial (en inglés) de [ModzvilleUSA](https://youtu.be/g9755sn-8no?si=kTDuldTNbNEdo-22) sobre la instalación en la placa VA0.
