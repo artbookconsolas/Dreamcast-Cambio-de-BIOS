@@ -77,3 +77,9 @@ Esta placa tiene por lo general una BIOS de 5V, por lo que usa los chips _**MX29
 
 > [!TIP]
 > Existe un videotutorial (en inglés) de [ModzvilleUSA](https://youtu.be/g9755sn-8no?si=kTDuldTNbNEdo-22) sobre la instalación en la placa VA0.
+
+## VA1
+POR HACER
+
+## VA2/2.1
+POR HACER
