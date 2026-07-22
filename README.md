@@ -72,12 +72,14 @@ Esta placa tiene por lo general una BIOS de 5V, por lo que usa los chips _**MX29
 1. Se retira el chip original.
 2. Se limpian los pads (hay que dejarlos lo más planos posible, sin estaño sobrante).
 3. Respetando el **PIN 1** original, se suelda el reemplazo.
-4. Para finalizar, se debe unir el **PIN 23** con el **PIN 44** (con un cable directo) y, opcionalmente, el **PIN 1** del chip al **PIN B14** del conector GD-ROM.
-
-![Chip de reemplazo ya montado en la consola](Fotos/VA0/BIOS-5V-DS-VA0.jpg)
+4. Para finalizar, se debe unir el **PIN 23 con el PIN 44** (con un cable directo) y configurar el **PIN 1** según el uso deseado:
+   * **Para flashear desde la consola:** Unir el **PIN 1** al **PIN B14** del conector GD-ROM.
+   * **Para proteger la BIOS contra escritura:** Unir el **PIN 1** directamente a **VCC (PIN 23)**.
 
 > [!NOTE]
-> El puente del PIN 1 al PIN B14 del GD-ROM es para programar el chip desde la misma consola mediante software. Si prefieres no usar esa función, puedes omitir este cable.
+> Conectar el PIN 1 a VCC mantendrá la BIOS en modo exclusivo de "solo lectura", protegiéndola contra cualquier corrupción accidental por software.
+
+![Chip de reemplazo ya montado en la consola](Fotos/VA0/BIOS-5V-DS-VA0.jpg)
 
 > [!TIP]
 > Existe un videotutorial (en inglés) de [ModzvilleUSA](https://youtu.be/g9755sn-8no?si=kTDuldTNbNEdo-22) sobre la instalación en la placa VA0.
